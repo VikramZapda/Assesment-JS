@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag</title>
+    <link rel="stylesheet" href="ship.css">
+</head>
+
+<div class="shopping-bag">
+    <h2>Shopping Bag</h2>
+
+    <div class="cart-item">
+        <span class="remove">&times;</span>
+        <span class="wishlist">&#9829;</span>
+        <img src="bball.jpg" alt="Product Image">
+        <div class="cart-item-details">
+            <h4>Common Projects Bball High</h4>
+            <p>White</p>
+        </div>
+        <div class="cart-item-quantity">
+            <span class="quantity-btn decrease" onclick="updateQuantity(this, -1)">&#8722;</span>
+            <span class="quantity">2</span>
+            <span class="quantity-btn increase" onclick="updateQuantity(this, 1)">&#43;</span>
+        </div>
+        <div class="cart-item-price">$549</div>
+    </div>
+
+    <div class="cart-item">
+        <span class="remove">&times;</span>
+        <span class="wishlist heart">&#9829;</span>
+        <img src="maison.jpg" alt="Product Image">
+        <div class="cart-item-details">
+            <h4>Maison Margiela Future Sneakers</h4>
+            <p>White</p>
+        </div>
+
+        <div class="cart-item-quantity">
+            <span class="quantity-btn decrease" onclick="updateQuantity(this, -1)">&#8722;</span>
+            <span class="quantity">1</span>
+            <span class="quantity-btn increase" onclick="updateQuantity(this, 1)">&#43;</span>
+        </div>
+        <div class="cart-item-price">$870</div>
+    </div>
+    
+    <div class="cart-item">
+        <span class="remove">&times;</span>
+        <span class="wishlist">&#9829;</span>
+        <img src="scarf.jpg" alt="Product Image">
+        <div class="cart-item-details">
+            <h4>Our Legacy Brushed Scarf</h4>
+            <p>Brown</p>
+        </div>
+        <div class="cart-item-quantity">
+            <span class="quantity-btn decrease" onclick="updateQuantity(this, -1) ">&#8722;</span>
+            <span class="quantity">1</span>  
+            <span class="quantity-btn increase" onclick="updateQuantity(this, 1)">&#43;</span>
+        </div>
+        <div class="cart-item-price">$349</div>
+    </div>
+
+</div>
+    <script src="ship.js"></script>
+</body>
+</html>
